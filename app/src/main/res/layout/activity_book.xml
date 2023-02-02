@@ -108,13 +108,14 @@
                 android:text="Long Descrition in Here"
                 app:layout_constraintEnd_toEndOf="@+id/btnAddToFavorite"
                 app:layout_constraintStart_toStartOf="@+id/descriptionText"
-                app:layout_constraintTop_toBottomOf="@+id/descriptionText" />
+                app:layout_constraintTop_toBottomOf="@+id/descriptionText"
+                android:padding="20dp"/>
 
             <TextView
                 android:id="@+id/txtBookName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
+                android:layout_marginStart="4dp"
                 android:text="The Lean Startup"
                 app:layout_constraintStart_toEndOf="@+id/nameText"
                 app:layout_constraintTop_toTopOf="@+id/nameText" />

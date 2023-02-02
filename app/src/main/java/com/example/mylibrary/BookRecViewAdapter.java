@@ -1,5 +1,7 @@
 package com.example.mylibrary;
 
+import static com.example.mylibrary.BookActivity.BOOK_ID_KEY;
+
 import android.content.Context;
 import android.content.Intent;
 import android.transition.TransitionManager;
@@ -49,6 +51,7 @@ public class BookRecViewAdapter extends RecyclerView.Adapter<BookRecViewAdapter.
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(mContext, BookActivity.class);
+                intent.putExtra(BOOK_ID_KEY, books.get(holder.getAdapterPosition()).getId());
                 mContext.startActivity(intent);
             }
         });
